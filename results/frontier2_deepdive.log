@@ -1,0 +1,20 @@
+[1] PRBM N=2048, b=1.0, 6 realisations: S_1 = 13.692
+    Fermi-gas identity S~_q = sum s_F(1/(1+e^(q eps))): max rel. deviation = 4.8e-10
+    wave function: D_2 = 0.808, alpha_0 = 1.113, min f_wave = 0.506
+    entanglement:  min f_ent/S_1 = 0.026 (>= 0 always)
+[2] Markov cascade: first-order Delta tau = -(lambda_2/ln b) Var(z_q)/<z_q>^2
+    lambda_2 = 0.05: max |exact - first order| / max|exact| = 2.11e-02
+    lambda_2 = 0.2: max |exact - first order| / max|exact| = 8.36e-02
+    transfer matrix n=400, q=2.5, lambda_2=0.5: -lnZ/(n ln2) = 0.619727, Perron formula = 0.619372
+[3] Delta_q = c1 u + c2 u^2 with c1 = 0.2596, c2 = -0.0058;  max |EMM form - Casimir form| = 0.0e+00;  alpha_0 - 2 = c1 = 0.2596
+[4] Gauss-Bonnet d=4:  lambda_GB -> a = lambda f_inf = (1 - sqrt(1 - 4 lambda))/2
+    lambda=-0.1944 (a=-0.1667): t2 = -0.33034
+    lambda=-0.1000 (a=-0.0916): t2 = -0.37822
+    lambda=+0.0000 (a=+0.0000): t2 = -0.49511; Einstein check max|S_q - HMSY closed form| = 3.3e-10
+    lambda=+0.0500 (a=+0.0528): t2 = -0.64788
+    lambda=+0.0900 (a=+0.1000): t2 = -0.98947; S~_q < 0 for q > 6.47
+    t2/t2_Einstein = 0.66720   vs  (C_T/a)_GB/(C_T/a)_E = (1-2a)/(1-6a) = 0.66667
+    t2/t2_Einstein = 0.76391   vs  (C_T/a)_GB/(C_T/a)_E = (1-2a)/(1-6a) = 0.76354
+    t2/t2_Einstein = 1.30854   vs  (C_T/a)_GB/(C_T/a)_E = (1-2a)/(1-6a) = 1.30902
+    t2/t2_Einstein = 1.99848   vs  (C_T/a)_GB/(C_T/a)_E = (1-2a)/(1-6a) = 2.00000
+figures written to figures/, data to data/

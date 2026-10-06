@@ -1,0 +1,24 @@
+two-scale Cantor measure: p = (0.6, 0.4), r = (0.25, 0.4)
+  D_0 (Hartley)      = 0.610983
+  D_1 (von Neumann)  = 0.561642
+  D_2 (collision)    = 0.521659
+  alpha_min = D_inf  = 0.368483   (min-entropy)
+  alpha_max          = 1.000000   (smallest eigenvalues)
+
+(1) exact cascade spectrum at eps = 1e-80: 203 distinct eigenvalues, trace = 1.000000000000
+     q      D_q     S_q/L(exact)    f(alpha_q)   S~_q/L(exact)
+    0.0   0.61098    0.61340       0.61098     0.61340
+    0.5   0.58525    0.58720       0.59762     0.60004
+    1.0   0.56164    0.56329       0.56164     0.56329
+    2.0   0.52166    0.52369       0.45139     0.45389
+    3.0   0.49097    0.49245       0.33169     0.32613
+    5.0   0.45070    0.45180       0.15315     0.15416
+
+(2) rho_A = tensor product of n = 40 bond qubits with Schmidt weights (0.6, 0.4):
+   q = 0.5:  S_q / (n ln2) = 0.9853517064   D_q = 0.9853517064
+   q = 2:  S_q / (n ln2) = 0.9434164716   D_q = 0.9434164716
+   q = 3:  S_q / (n ln2) = 0.9182506339   D_q = 0.9182506339
+
+(3) quantum-Hall spectrum: alpha_0 = 2.2597, max |f(2d-alpha) - f(alpha) - d + alpha| = 2.2e-15
+
+figures written to figures/, data to data/

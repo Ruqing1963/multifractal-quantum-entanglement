@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Multifractal Large Deviations in Quantum Entanglement: code, data and figures"
+authors:
+  - family-names: Chen
+    given-names: Ruqing
+    affiliation: "GUT Geoservice Inc., Montreal"
+    email: ruqing@hotmail.com
+repository-code: "https://github.com/Ruqing1963/multifractal-quantum-entanglement"
+doi: 10.5281/zenodo.23193512
+date-released: 2026-10-06
+license: MIT
+keywords:
+  - quantum entanglement
+  - entanglement spectrum
+  - multifractal
+  - Renyi entropy
+  - large deviations
+  - tensor networks
+  - quantum Hall transition
+  - holography
+preferred-citation:
+  type: article
+  title: "Multifractal Large Deviations in Quantum Entanglement: Ideal Fermi-Gas Mapping, Markov Tensor Cascades, and Quartic Casimir Symmetry"
+  authors:
+    - family-names: Chen
+      given-names: Ruqing
+      affiliation: "GUT Geoservice Inc., Montreal"
+  year: 2026
+  doi: 10.5281/zenodo.23193512
