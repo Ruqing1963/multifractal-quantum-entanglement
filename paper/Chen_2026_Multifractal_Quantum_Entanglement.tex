@@ -103,8 +103,11 @@ and it is analytic for $\lambda_2<1$. Phase transitions require reducibility or 
 in the Weyl-invariant variable $u=q(1-q)$ identifies $b_1$ with the coefficient of $u^2$. This term arises at
 four loops in the $2+\varepsilon$ expansion, with the observed sign, and is incompatible with
 current-algebra primaries of a WZW model.
-\item \emph{Gauss--Bonnet cosmic branes} (Section~\ref{sec:holo}). The $q$-expansion of the holographic mass
-exponent is controlled by CFT data such as $C_T/a$. Positive Gauss--Bonnet coupling leads to a negative refined
+\item \emph{Gauss--Bonnet cosmic branes} (Section~\ref{sec:holo}). In a companion paper~\cite{Chen2026_holo} we
+applied the cosmic-brane description to fractal entangling surfaces. There, in Einstein gravity, the shape of
+$f(\alpha)$ is fixed by the bulk through the horizon radius $x_q$, and in $d=2$ it reduces to the Calabrese--Lefevre
+form, which is universal for all CFTs. Here we extend the analysis to Gauss--Bonnet gravity. The $q$-expansion of the
+holographic mass exponent is controlled by CFT data such as $C_T/a$. Positive Gauss--Bonnet coupling leads to a negative refined
 R\'enyi entropy at finite $q$. No dictionary between holographic couplings and $b_1$ is warranted.
 \end{enumerate}
 Section~\ref{sec:discussion} discusses limitations, and the Appendix collects numerical methods and
@@ -201,6 +204,21 @@ f_{\rm ent}(\alpha_q)=\frac{1}{3q},
 \end{equation}
 which is the Calabrese--Lefevre result $f(\alpha_q)=c/(3q)$ with $c=1$~\cite{CL}.
 \end{corollary}
+
+\begin{remark}[Bosonic Gaussian states]
+The same transcription holds for bosonic Gaussian states. By Williamson's theorem the reduced state is
+$\rho_A=\bigotimes_k(1-e^{-\varepsilon_k})\,e^{-\varepsilon_kb_k^\dagger b_k}$, with symplectic eigenvalues
+$\nu_k=\frac12\coth(\varepsilon_k/2)$ (vacuum normalised to $\nu=\frac12$). Then
+\begin{equation}
+\ln\Tr\rho_A^q=\sum_k\Big[q\ln\big(1-e^{-\varepsilon_k}\big)-\ln\big(1-e^{-q\varepsilon_k}\big)\Big],\qquad
+\tilde S_q=\sum_k s_B\big(\bar n_q(\varepsilon_k)\big),
+\end{equation}
+with $\bar n_q(\varepsilon)=(e^{q\varepsilon}-1)^{-1}$ and $s_B(n)=(1+n)\ln(1+n)-n\ln n$. The refined R\'enyi entropy is
+thus the entropy of an ideal Bose gas at temperature $1/q$, by the same argument as in Theorem~\ref{thm:fermi}: the
+escort state is thermal with energies $q\varepsilon_k$. Pure modes ($\nu_k=\frac12$) do not contribute, and
+$f_{\rm ent}\ge0$ is again concave. Unlike the fermionic case there is no $\varepsilon\to-\varepsilon$ symmetry,
+since $\varepsilon_k>0$.
+\end{remark}
 
 \subsection{What wave-function multifractality can and cannot determine}
 The correlation matrix of a Slater determinant is $C=P_A\Pi P_A$, where $\Pi=\sum_{n\in\rm occ}|\psi_n\rangle\langle\psi_n|$
@@ -539,7 +557,7 @@ $(z_1-z_2)^2\lesssim eS^2$, i.e.\ on a window of width $\propto(1-\lambda_2)^{1/
 \bibitem{PRBM} A.~D.~Mirlin, Y.~V.~Fyodorov, F.-M.~Dittes, J.~Quezada, T.~H.~Seligman, ``Transition from localized to extended eigenstates in the ensemble of power-law random banded matrices'', Phys.\ Rev.\ E 54 (1996) 3221.
 \bibitem{HNQTWY} P.~Hayden, S.~Nezami, X.-L.~Qi, N.~Thomas, M.~Walter, Z.~Yang, ``Holographic duality from random tensor networks'', JHEP 11 (2016) 009, arXiv:1601.01694.
 \bibitem{Vidal} G.~Vidal, ``Entanglement renormalization'', Phys.\ Rev.\ Lett.\ 99 (2007) 220405.
-\bibitem{Kato} T.~Kato, \emph{Perturbation Theory for Linear Operators}, Springer.
+\bibitem{Kato} T.~Kato, \emph{Perturbation Theory for Linear Operators}, 2nd ed.\ (reprint of the 1980 edition), Classics in Mathematics, Springer, Berlin (1995).
 \bibitem{GLMZ} I.~A.~Gruzberg, A.~W.~W.~Ludwig, A.~D.~Mirlin, M.~R.~Zirnbauer, ``Symmetries of multifractal spectra and field theories of Anderson localization'', Phys.\ Rev.\ Lett.\ 107 (2011) 086403, arXiv:1103.4627.
 \bibitem{GMZ} I.~A.~Gruzberg, A.~D.~Mirlin, M.~R.~Zirnbauer, ``Classification and symmetry properties of scaling dimensions at Anderson transitions'', Phys.\ Rev.\ B 87 (2013) 125144, arXiv:1210.6726.
 \bibitem{DiFrancesco} P.~Di~Francesco, P.~Mathieu, D.~S\'en\'echal, \emph{Conformal Field Theory}, Springer (1997).
@@ -549,5 +567,6 @@ $(z_1-z_2)^2\lesssim eS^2$, i.e.\ on a window of width $\propto(1-\lambda_2)^{1/
 \bibitem{Perlmutter} E.~Perlmutter, ``A universal feature of CFT R\'enyi entropy'', JHEP 03 (2014) 117, arXiv:1308.1083.
 \bibitem{MyersSinha} R.~C.~Myers, A.~Sinha, ``Holographic c-theorems in arbitrary dimensions'', JHEP 01 (2011) 125, arXiv:1011.5819.
 \bibitem{DemboZeitouni} A.~Dembo, O.~Zeitouni, \emph{Large Deviations Techniques and Applications}, 2nd ed., Springer (1998).
+\bibitem{Chen2026_holo} R.~Chen, ``Holographic entanglement of fractal regions: Complex dimensions, non-local counterterms and cosmic-brane multifractality'' (2026), doi:10.5281/zenodo.23189575.
 \end{thebibliography}
 \end{document}
